@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background: url("../Assets/Background.png");
+  background-position: center;
+  background-size: fit;
+}
+
+input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+input[type="submit"] {
+  background-color: #013243;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  color: #013243;
+  font-weight: bold;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.main-container {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.main-container section {
+  padding: 2rem 3rem;
+  min-height: 50vh;
+}
+
+.main-container section:first-child {
+  color: white;
+  background-color: #013243;
+  background-image: url("../Assets/iPhone\ Mockup.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main-container section h1.title {
+  margin-top: 1rem;
+  font-size: 2.5rem;
+}
+
+.main-container section:first-child .subtitle {
+  margin-top: 1rem;
+  color: #86bfd3;
+}
+
+.form-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-group.terms {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.form-group.terms label {
+  padding-left: 0.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container section {
+    min-height: 40vh;
+  }
+
+  .main-container {
+    margin: 10%;
+    width: 50%;
+    min-height: 90vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    height: 100vh;
+  }
+
+  .main-container section {
+    min-height: 100%;
+    width: 50%;
+  }
+
+  .main-container {
+    display: flex;
+    width: 75%;
+    margin: 10% auto;
+    min-height: 540px;
+    border-radius: 12px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  main {
+    height: 100vh;
+  }
+
+  .main-container section {
+    min-height: 100%;
+    width: 50%;
+  }
+
+  .main-container {
+    height: 540px;
+    display: flex;
+    width: 938px;
+    margin: 10% auto;
+    border-radius: 12px;
+  }
+}
